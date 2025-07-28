@@ -151,9 +151,9 @@ export default {
             contactos: [],
             categorias: [],
             contactosCategorias: [],
-            paises: paisesData,
+            paises: [],
             title: 'Lista de Contactos',
-            ciudades: ciudadesData,
+            ciudades: [],
             ciudadesFiltradas: [],
             modalBootstrapInstance: null,
             contactoSeleccionado: null,
@@ -169,6 +169,8 @@ export default {
     mounted() {
         //this.modalBootstrapInstance = new bootstrap.Modal(this.$refs.modalRef)
         this.obtenerListaContactos()
+        this.obtenerListaPaises()
+        this.obtenerListaCiudades()
         this.initModal()
     },
     created() {
@@ -193,6 +195,24 @@ export default {
                 })
                 .catch(error => {
                     console.error('Error al obtener contactos:', error)
+                })
+        },
+        obtenerListaPaises() {
+            this.axios.get(process.env.VUE_APP_API_URL+'/paises')
+                .then(response => {
+                    this.paises = response.data
+                })
+                .catch(error => {
+                    console.error('Error al obtener países:', error)
+                })
+        },
+        obtenerListaCiudades() {
+            this.axios.get(process.env.VUE_APP_API_URL+'/ciudades')
+                .then(response => {
+                    this.ciudades = response.data
+                })
+                .catch(error => {
+                    console.error('Error al obtener ciudades:', error)
                 })
         },
         initModal() {

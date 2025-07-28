@@ -89,8 +89,8 @@ export default {
   data() {
     return {
       title: 'Listado de Ciudades',
-      ciudades: ciudadesList,
-      paises: paisesList,
+      ciudades: [],
+      paises: [],
       modalBootstrapInstance: null,
       ciudadSeleccionada: null,
       indiceSeleccionado: null,
@@ -99,9 +99,29 @@ export default {
   },
   mounted() {
     this.obtenerListaCiudades()
+    this.obteberListaPaises()
+    this.obtenerListaCiudades()
     this.initModal()
   },
   methods: {
+    obtenerListaCiudades() {
+      this.axios.get(process.env.VUE_APP_API_URL+'/ciudades')
+        .then(response => {
+          this.ciudades = response.data
+        })
+        .catch(error => {
+          console.error('Error al obtener ciudades:', error)
+        })
+    },
+    obteberListaPaises() {
+      this.axios.get(process.env.VUE_APP_API_URL+'/paises')
+        .then(response => {
+          this.paises = response.data
+        })
+        .catch(error => {
+          console.error('Error al obtener países:', error)
+        })
+    },
     obtenerListaCiudades() {
       this.axios.get(process.env.VUE_APP_API_URL+'/ciudades')
         .then(response => {

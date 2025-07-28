@@ -92,7 +92,7 @@ export default {
     data() {
         return {
             title: 'Lista de Categorías',
-            categorias: categoriasList,
+            categorias: [],
             modalMode: 'crear',
             categoriaSeleccionada: null,
             indiceSeleccionado: null,

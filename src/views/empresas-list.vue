@@ -82,9 +82,9 @@ export default {
     data() {
         return {
             title: 'Lista de Empresas',
-            empresas: empresasList,
-            paises: paisesList,
-            ciudades: ciudadesList,
+            empresas: [],
+            paises: [],
+            ciudades: [],
             ciudadesFiltradas: [],
             modalBootstrapInstance: null,
             indiceSeleccionado: null,
@@ -94,6 +94,8 @@ export default {
     },
     mounted() {
         this.obtenerListaEmpresas();
+        this.obtenerListaPaises();
+        this.obtenerListaCiudades();
         this.initModal();
     },
     methods: {
@@ -104,6 +106,24 @@ export default {
                 })
                 .catch(error => {
                     console.error('Error al obtener empresas:', error);
+                });
+        },
+        obtenerListaPaises() {
+            this.axios.get(process.env.VUE_APP_API_URL+'/paises')
+                .then(response => {
+                    this.paises = response.data;
+                })
+                .catch(error => {
+                    console.error('Error al obtener países:', error);
+                });
+        },
+        obtenerListaCiudades() {
+            this.axios.get(process.env.VUE_APP_API_URL+'/ciudades')
+                .then(response => {
+                    this.ciudades = response.data;
+                })
+                .catch(error => {
+                    console.error('Error al obtener ciudades:', error);
                 });
         },
         initModal() {
