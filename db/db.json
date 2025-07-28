@@ -1,0 +1,317 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Familia",
+      "color": "#FF666B",
+      "descripcion": "Contactos familiares"
+    },
+    {
+      "id": 2,
+      "nombre": "Trabajo",
+      "color": "#4ECDC4",
+      "descripcion": "Compañeros de trabajo"
+    },
+    {
+      "id": 3,
+      "nombre": "Amigos",
+      "color": "#45B7D1",
+      "descripcion": "Amigos personales"
+    },
+    {
+      "id": 4,
+      "nombre": "Servicios",
+      "color": "#FFBE0B",
+      "descripcion": "Servicios varios"
+    }
+  ],
+  "ciudades": [
+    {
+      "id": 1,
+      "nombre": "Buenos Aires",
+      "paisId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Córdoba",
+      "paisId": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Santiago",
+      "paisId": 3
+    },
+    {
+      "id": 4,
+      "nombre": "Río de Janeiro",
+      "paisId": 2
+    },
+    {
+      "id": 5,
+      "nombre": "Lima",
+      "paisId": 5
+    },
+    {
+      "id": 6,
+      "nombre": "La Paz",
+      "paisId": 9
+    },
+    {
+      "id": 7,
+      "nombre": "Oruro",
+      "paisId": 9
+    },
+    {
+      "id": 8,
+      "nombre": "Potosí",
+      "paisId": 9
+    },
+    {
+      "id": 9,
+      "nombre": "Santa Cruz",
+      "paisId": 9
+    },
+    {
+      "id": 10,
+      "nombre": "Tarija",
+      "paisId": 9
+    },
+    {
+      "id": 11,
+      "nombre": "Sucre",
+      "paisId": 9
+    },
+    {
+      "id": 12,
+      "nombre": "Cochabamba",
+      "paisId": 9
+    },
+    {
+      "id": 13,
+      "nombre": "Montero",
+      "paisId": 9
+    },
+    {
+      "id": 14,
+      "nombre": "Villazón",
+      "paisId": 9
+    },
+    {
+      "id": 15,
+      "nombre": "Cobija",
+      "paisId": 9
+    }
+  ],
+  "contacto-categoria": [
+    {
+      "id": 1,
+      "contactoId": 1,
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "contactoId": 1,
+      "categoriaId": 2
+    },
+    {
+      "id": 3,
+      "contactoId": 2,
+      "categoriaId": 3
+    }
+  ],
+  "empresas": [
+    {
+      "id": 1,
+      "nombre": "Empresa A",
+      "telefono": "123456789",
+      "correo": "empresa1@gmail.com",
+      "direccion": "Calle 1",
+      "paisId": 1,
+      "ciudadId": 1,
+      "sitioWeb": "www.empresa1.com",
+      "notas": "Notas de la empresa A"
+    },
+    {
+      "id": 2,
+      "nombre": "Empresa B",
+      "telefono": "987654321",
+      "correo": "empresa2@gmail.com",
+      "direccion": "Calle 2",
+      "paisId": 2,
+      "ciudadId": 2,
+      "sitioWeb": "www.empresa2.com",
+      "notas": "Notas de la empresa B"
+    },
+    {
+      "id": 3,
+      "nombre": "Empresa C",
+      "telefono": "456789123",
+      "correo": "empresa3@gmail.com",
+      "direccion": "Calle 3",
+      "paisId": 3,
+      "ciudadId": 3,
+      "sitioWeb": "www.empresa3.com",
+      "notas": "Notas de la empresa C"
+    },
+    {
+      "id": 4,
+      "nombre": "Empresa D",
+      "telefono": "321654987",
+      "correo": "empresa4@gmali.com",
+      "direccion": "Calle 4",
+      "paisId": 4,
+      "ciudadId": 4,
+      "sitioWeb": "www.empresa4.com",
+      "notas": "Notas de la empresa D"
+    },
+    {
+      "id": 5,
+      "nombre": "Empresa E",
+      "telefono": "72696012",
+      "correo": "empresa5@gmail.com",
+      "direccion": "Calle 5",
+      "paisId": 2,
+      "ciudadId": 4,
+      "sitioWeb": "empresa5.com",
+      "notas": "base de datos"
+    }
+  ],
+  "paises": [
+    {
+      "id": 1,
+      "nombre": "Argentina",
+      "sigla": "AR"
+    },
+    {
+      "id": 2,
+      "nombre": "Brasil",
+      "sigla": "BR"
+    },
+    {
+      "id": 3,
+      "nombre": "Chile",
+      "sigla": "CL"
+    },
+    {
+      "id": 4,
+      "nombre": "Colombia",
+      "sigla": "CO"
+    },
+    {
+      "id": 5,
+      "nombre": "Perú",
+      "sigla": "PE"
+    },
+    {
+      "id": 6,
+      "nombre": "Uruguay",
+      "sigla": "UY"
+    },
+    {
+      "id": 7,
+      "nombre": "Venezuela",
+      "sigla": "VE"
+    },
+    {
+      "id": 8,
+      "nombre": "Paraguay",
+      "sigla": "PY"
+    },
+    {
+      "id": 9,
+      "nombre": "Bolivia",
+      "sigla": "BO"
+    },
+    {
+      "id": 10,
+      "nombre": "Ecuador",
+      "sigla": "EC"
+    },
+    {
+      "id": 11,
+      "nombre": "México",
+      "sigla": "MX"
+    },
+    {
+      "id": 12,
+      "nombre": "España",
+      "sigla": "ES"
+    }
+  ],
+  "puestos": [
+    {
+      "id": 1,
+      "contactoId": 1,
+      "empresaId": 1,
+      "puesto": "Gerente de Ventas",
+      "departamento": "Comercial"
+    },
+    {
+      "id": 2,
+      "contactoId": 1,
+      "empresaId": 1,
+      "puesto": "Analista de Marketing",
+      "departamento": "Marketing"
+    },
+    {
+      "id": 3,
+      "contactoId": 1,
+      "empresaId": 1,
+      "puesto": "Desarrollador Backend",
+      "departamento": "Tecnología"
+    },
+    {
+      "id": 4,
+      "contactoId": 1,
+      "empresaId": 1,
+      "puesto": "Gerente de Proyectos",
+      "departamento": "Proyectos"
+    }
+  ],
+  "contactos": [
+    {
+      "id": 1,
+      "nombre": "Patrick",
+      "apellido": "Gómez",
+      "telefono": "72696012",
+      "correo": "patrick_adrian@hotmail.com",
+      "direccion": "Calle 123",
+      "paisId": 9,
+      "ciudadId": 9,
+      "fechaNacimiento": "1982-09-30",
+      "favorito": true,
+      "categorias": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Ana",
+      "apellido": "Gómez",
+      "telefono": "555-5678",
+      "correo": "ana@example.com",
+      "direccion": "Av. Principal",
+      "paisId": 2,
+      "ciudadId": 3,
+      "fechaNacimiento": "1992-05-15",
+      "favorito": false,
+      "categorias": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Luis",
+      "apellido": "Pérez",
+      "telefono": "555-8765",
+      "correo": "luis@gmail.com",
+      "direccion": "Calle Secundaria",
+      "paisId": 1,
+      "ciudadId": 1,
+      "fechaNacimiento": "1988-10-20",
+      "favorito": true,
+      "categorias": []
+    }
+  ]
+}
